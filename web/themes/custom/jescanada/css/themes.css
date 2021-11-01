@@ -442,6 +442,87 @@ section.featured-projects::after {
 .our-projects {
   overflow: hidden;
 }
+.view-our-projects .views-row{
+  margin-bottom: 35px;
+}
+.view-our-projects .views-row:last-child{
+  margin-bottom: 0px;
+}
+.view-our-projects .image-section {
+  padding: 0px;
+}
+.view-our-projects .image-section img{
+  width:100%;
+}
+.view-our-projects .content-section {
+  border-bottom: 8px solid #00839B;
+  min-height: 348px;
+  padding: 30px;
+}
+.view-our-projects .our-projects-date a {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 600;
+  margin: 15px 0px;
+  display: block;
+}
+.view-our-projects .our-projects-desc {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 40px;
+}
+.view-filters .views-exposed-form .form-type-textfield, 
+.view-filters .views-exposed-form .form-type-textfield .form-text {
+  width: 100%;
+}
+.views-exposed-form .form-item-combine .form-control {
+  height: 60px;
+  padding: 20px 20px 20px 20px;
+  margin: 0 0px 30px 0;
+  border-radius: 0px;
+  border-color: #004F5D;
+}
+.views-exposed-form .form-item-combine .form-control::placeholder{
+  color:#004F5D;
+  font-size: 18px;
+  line-height:24px;
+  font-weight: 600;
+}
+.views-exposed-form .form-type-select {
+  width: 31.5%;
+}
+.views-exposed-form .form-inline .select-wrapper {
+  width: 100%;
+}
+.views-exposed-form .form-select.form-control {
+  width: 100%;
+  border-radius: 0px;
+  height: 60px;
+  border-color: #004F5D;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #004F5D;
+}
+.views-exposed-form .form-item-field-project-related-theme-target-id {
+  margin-left: 27px;
+  margin-right: 27px;
+}
+.views-exposed-form .glyphicon {
+  display: none;
+}
+.views-exposed-form .form-submit {
+  margin-top: 30px;
+  margin-bottom: 75px;
+  min-width: 132px;
+}
+.views-exposed-form .select-wrapper::after {
+  content: '';
+  width: 28px;
+  height: 14px;
+  right: 15px;
+  background: url(../images/arrow-ios-downward-fill.svg) no-repeat;
+}
 /*footer with bgcolor section*/
 .footer-top-with-bgcolor .block {
   display: inline-block;
@@ -777,10 +858,6 @@ section#block-ourhistory .col-sm-7 img {
 #content-top-with-bgcolor .block.block-views-blockproject-theme-block-1 {
   width: 100%;
 }
-.page-node-7 div#content-top-with-bgcolor h2.block-title {
-  text-align: center;
-  margin-bottom: 80px;
-}
 .view-project-theme .views-row {
   margin-bottom: 75px;
 }
@@ -817,6 +894,75 @@ section#block-ourhistory .col-sm-7 img {
 .view-project-theme .views-row:nth-child(odd) .image-section img,
 .view-project-theme .views-row:nth-child(even) .image-section img{
   max-width: 875px;
+}
+section#block-relatedthemeheading h2 {
+  font-size: 44px;
+  line-height: 56px;
+  margin-bottom: 90px;
+}
+.view-project-related-themes .view-header {
+  margin-bottom: 50px;
+}
+.view-project-related-themes .view-header .col-sm-4 h3 {
+  font-size: 44px;
+  line-height: 56px;
+  font-weight: 700;
+  margin-top: 0;
+}
+.view-project-related-themes .view-header .col-sm-8 p {
+  font-size: 20px;
+  line-height: 35px;
+}
+.view-project-related-themes .view-header .col-sm-8 strong {
+  padding-top: 60px;
+  display: block;
+  font-weight: 600;
+  padding-left: 100px;
+}
+.view-project-related-themes .views-col {
+  background: #ffffff;
+  border-bottom:7px solid #00839B;
+}
+.view-project-related-themes .project-contents {
+  padding: 30px;
+  min-height: 305px;
+}
+.view-project-related-themes .project-contents h4{
+  margin:0px;
+}
+.view-project-related-themes .project-contents h4.project-title a {
+  margin: 0px;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 700;
+  text-decoration: none;
+  height: 2.5em;
+  overflow: hidden;
+  display: block;
+}
+.view-project-related-themes .project-contents .project-location-date-status {
+  font-size: 18px;
+  line-height: 33px;
+  font-weight: 600;
+  min-height: 65px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  height: 3em;
+  overflow: hidden;
+}
+.view-project-related-themes .view-footer {
+  font-size: 20px;
+  line-height: 33px;
+  font-weight: 600;
+  padding-right: 40px;
+  text-decoration: underline;
+  background: url(../images/arrow-image.png) no-repeat center right;
+  display: inline-block;
+  background-size: 35px;
+  margin-bottom: 100px;
+}
+.page-node-40 .description img {
+  margin-bottom: 25px;
 }
 /*how we work*/
 .view-how-we-work {
@@ -1001,14 +1147,4 @@ div#quicktabs-open_opportunities {
   border-radius: 22px;
   color: #000;
   font-weight: 500;
-}
-/* contact page css */
-.webform-submission-form {
-  width: 75%;
-}
-.inner-page-corner-image .description .field--type-text-with-summary .row .col-sm-6 {
-  margin: 75px 0 40px 0;
-}
-.breadcrumb > li + li:before {
-  content: ">" !important;
 }

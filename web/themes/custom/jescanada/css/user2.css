@@ -1,0 +1,56 @@
+/* contact page css */
+.webform-submission-form {
+    width: 46%;
+    margin-top: 25px;
+}
+.webform-submission-form .form-control {
+    border-radius: 0;
+    border-color: #004F5D;
+}
+.inner-page-corner-image .description .field--type-text-with-summary .row .col-sm-6 {
+    margin: 80px 0 50px 0;
+  }
+.breadcrumb > li + li:before {
+    content: ">" !important;
+}
+.webform-submission-form .webform-confirmation h3 {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 40px;
+}
+/* news listing */
+.impact-stories-listing .content .category{
+    margin-bottom: 0;
+}
+.impact-stories-listing .content .category a {
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 30px;
+}
+#content-top-with-bgcolor .block-title {
+    margin: 0;
+    padding-bottom: 55px;
+}
+.view-id-impact_story_listing .row.impact-stories-listing .content .quote:before{
+    content: '';
+    background: url(../images/block-quote-line.svg) no-repeat center center/cover;
+    display: block;
+    width: 35px;
+    height: 27px;
+    margin-bottom: 5px;
+}
+.view-id-impact_story_listing .row.impact-stories-listing .content .quote p {
+    padding-bottom: 24px;
+}
+.views-element-container .view-header h1 {
+    font-size: 44px;
+    line-height: 55px;
+    font-weight: bold;
+}
+.views-field-field-upload-funder-image img {
+    width: 100%;
+}
+.description .fas,.description .far{
+    color: #6CA93D;
+}

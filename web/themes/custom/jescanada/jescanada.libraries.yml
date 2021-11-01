@@ -6,5 +6,6 @@ framework:
       css/ipad.css: {}
       css/mobile.css: {}
       css/project.css: {}
+      css/user2.css: {}
   js:
     js/simple.js: {}
