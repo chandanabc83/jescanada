@@ -1,0 +1,10 @@
+framework:
+  css:
+    theme:
+      css/style.css: {}
+      css/themes.css: {}
+      css/ipad.css: {}
+      css/mobile.css: {}
+      css/project.css: {}
+  js:
+    js/simple.js: {}

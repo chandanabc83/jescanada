@@ -1,0 +1,29 @@
+{#
+/**
+ * @file
+ * Theme override to display a single component.
+ *
+ * header area template
+ */
+#}
+
+<header id="header-section">
+
+  <section class="header-main container-fluid"> 
+    <div class="row">      
+      {% if page.header_left %}
+        <div class="header-left col-sm-2">{{ page.header_left }}</div>
+      {% endif %}
+
+      <div class="header-right col-sm-10">
+        {% if page.header_right_top %}
+          <div class="header-right-top">{{ page.header_right_top }}</div>
+        {% endif %}
+        {% if page.header_right_bottom %}
+          <div class="header-right-bottom">{{ page.header_right_bottom }}</div>
+        {% endif %}  
+      </div>  
+    </div>      
+  </section>
+  
+</header>

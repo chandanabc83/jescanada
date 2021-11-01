@@ -1,0 +1,52 @@
+{#
+/**
+ * @file
+ * Theme override to display a single component.
+ *
+ * footer area template
+ */
+#}
+
+
+<footer id="footer-section">
+  {% if page.footer_top_with_bgcolor %}
+    <div class="footer-top-with-bgcolor container-fluid">
+      <div class="container">{{ page.footer_top_with_bgcolor }}</div>
+    </div>
+  {% endif %}
+
+  {% if page.footer_top_with_bgmap %}
+    <div class="footer-top-with-bgmap container-fluid">
+      <div class="container">{{ page.footer_top_with_bgmap }}</div>
+    </div>
+  {% endif %}
+
+  <section class="footer-main-top container-fluid">
+    <div class="row">      
+      {% if page.footer_column_first %}
+        <div class="footer-main-column-1 col-sm-3">{{ page.footer_column_first }}</div>
+      {% endif %}
+      {% if page.footer_column_second %}
+        <div class="footer-main-column-2 col-sm-5">{{ page.footer_column_second }}</div>
+      {% endif %}
+      {% if page.footer_column_third %}
+        <div class="footer-main-column-3 col-sm-2">{{ page.footer_column_third }}</div>
+      {% endif %}
+      {% if page.footer_column_fourth %}
+        <div class="footer-main-column-4 col-sm-2">{{ page.footer_column_fourth }}</div>
+      {% endif %}  
+    </div>    
+  </section> 
+
+  <section class="footer-main-bottom container-fluid">
+    <div class="row">
+      {% if page.footer_bottom_left %}
+        <div class="footer-bottom-left col-sm-6">{{ page.footer_bottom_left }}</div>
+      {% endif %}
+      {% if page.footer_bottom_right %}
+        <div class="footer-bottom-right col-sm-6">{{ page.footer_bottom_right }}</div>
+      {% endif %}
+    </div>
+  </section>
+
+</footer>

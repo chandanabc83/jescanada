@@ -1,0 +1,37 @@
+type: theme
+base theme: bootstrap
+core: 8.x
+core_version_requirement: ^8 || ^9
+
+name: 'Justice Education Society'
+description: 'A Drupal Bootstrap 3 based sub-theme.'
+package: 'Bootstrap'
+
+regions:
+  header_left: "Header Left"
+  header_right_top: "Header Right Top"
+  header_right_bottom: "Header Right Bottom"
+
+  frontpage_banner: "Frontpage Banner"
+  frontpage_banner_bottom_quadrants: "Quadrants"
+  featurette_6_6: "Featurette 6-6"
+  featured_projects: "Featured Projects"
+
+  breadcrumb: "Breadcrumb"
+  content: "Content Area"
+  content_top: "Content Top"
+  content_middle: "Content Middle"
+  content_bottom: "Content Bottom"
+
+  footer_top_with_bgcolor: "Footer Top With Bgcolor"
+  footer_top_with_bgmap: "Footer Top With Bgmap"
+  footer_column_first: 'Footer Column First'
+  footer_column_second: 'Footer Column Second'
+  footer_column_third: 'Footer Column Third'
+  footer_column_fourth: 'Footer Column Fourth'
+  footer_bottom_left: 'Footer Bottom Left'
+  footer_bottom_right: 'Footer Bottom Right'
+
+libraries-extend:
+  bootstrap/framework:
+    - jescanada/framework

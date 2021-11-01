@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+body {
+  padding: 0px;
+  margin: 0px;
+  color: #004F5D;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #ffffff;
+}
+
+/**
+**  header
+**/
+section.header-main.container-fluid {
+  padding: 19px 3.75% 0px 3.75%;
+  box-shadow: 0px 2px 7px rgb(0 0 0 / 7%);
+}
+.intersection-corner-left {
+  position: relative;
+}
+section.frontpage-banner.container-fluid {
+  position: relative;
+  padding: 0px;
+  margin-bottom: 115px;
+  overflow: hidden;
+}
+section.frontpage-banner-bottom-quadrants.container-fluid {
+  background: #6CA93D;
+  padding: 33px 0px;
+}
+.intersection-corner {
+  width: 453px;
+  height: 452px;
+  position: absolute;
+  left: -226px;
+  bottom: 4px;
+  background: url(../images/Intersection.svg) no-repeat left;
+}
+section.featurette-6-6 {
+  padding-top: 45px;
+  overflow: hidden;
+}
+section.featured-projects {
+  background: #F2F2F2;
+  padding: 40px 0px 95px 0px;
+}
+#content-top-with-bgcolor,
+.content-middle-with-bgcolor,
+#content-bottom-with-bgcolor{
+  padding: 50px 0px;
+  overflow: hidden;
+}
+#content-top-with-bgcolor,
+#content-bottom-with-bgcolor{
+  position: relative;
+  background: #F2F2F2;
+}
+.footer-top-with-bgcolor-shadow {
+  width: 63%;
+  height: 85px;
+  float: right;
+  clip-path: polygon(22% 0, 0 100%, 100% 100%, 100% 0%, 75% 0);
+  background-image: linear-gradient(to right, #6CA93D 40% , #00839B);
+}
+/***
+** Content Area
+**/
+#maindiv {
+  margin: auto;
+  padding-top: 25px;
+  margin-bottom: 50px;
+}
+#midcontent-area {
+  width: 100%;
+  float: left;
+  overflow: hidden;
+}
+
+/***
+** footer
+**/
+.footer-top-with-bgcolor.container-fluid {
+  padding: 40px 0px 50px 0px;
+  background: #004F5D;
+}
+.footer-top-with-bgmap.container-fluid {
+  background: #6CA93D url(../images/map-Intersection.svg) no-repeat center;
+  padding: 95px 0px;
+  color: #004F5D;
+  overflow: hidden;
+}
+section.footer-main-top.container-fluid {
+  padding: 60px 3.75% 75px 3.75%;
+  overflow: hidden;
+}
+section.footer-main-bottom.container-fluid {
+  color: #ffffff;
+  padding: 37px 3.75%;
+  background: #004F5D;
+  overflow: hidden;
+}
