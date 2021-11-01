@@ -1002,3 +1002,13 @@ div#quicktabs-open_opportunities {
   color: #000;
   font-weight: 500;
 }
+/* contact page css */
+.webform-submission-form {
+  width: 75%;
+}
+.inner-page-corner-image .description .field--type-text-with-summary .row .col-sm-6 {
+  margin: 75px 0 40px 0;
+}
+.breadcrumb > li + li:before {
+  content: ">" !important;
+}
