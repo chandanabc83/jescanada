@@ -94,12 +94,12 @@
 	<div class="project-bg-section container-fluid">
 		<div class="container">
 			<div class="project-country col-sm-4"><div class="image"><img src="/sites/default/files/inline-images/country.svg" class="default-image"></div>{{ content.field_project_country }}</div>
-			<div class="project-funder-image col-sm-4"><div class="image"><img src="/sites/default/files/inline-images/funder.svg" class="default-image"></div><div class="field--label">Funder</div><img src="{{ file_url(content.field_funder_image['#items'][0].entity.uri.value) }}"/></div>
+			<div class="project-funder-image col-sm-4"><div class="image"><img src="/sites/default/files/inline-images/funder.svg" class="default-image"></div><div class="field--label">Funder</div>{{ content.field_funder_image }}</div>
 			<div class="project-status col-sm-4"><div class="image"><img src="/sites/default/files/inline-images/status.svg" class="default-image"></div>{{ content.field_project_status }}{{ node.field_project_date.value|raw }}</div>
 		</div>
 	</div>
 	<div class="project-content-image container-fluid">
 		<div class="project-detail-2 col-sm-7">{{ node.field_project_detail_2.value|raw	}}</div>
-		<div class="project-image col-sm-5"><img src="{{ file_url(content.field_project_image['#items'][0].entity.uri.value) }}"/></div>
+		<div class="project-image col-sm-5">{{ content.field_project_image }}</div>
 	</div>
 </div>

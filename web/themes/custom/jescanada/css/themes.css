@@ -313,6 +313,16 @@ section.featured-projects h2.block-title{
   color: #ffffff;
   text-decoration: underline;
 }
+.view-featured-project-homepage .views-row.row-1 {
+  margin-bottom: 40px;
+}
+.view-featured-project-homepage .views-col {
+  width: 31.5% !important;
+}
+.view-featured-project-homepage .views-col.col-2 {
+  margin-left: 31px;
+  margin-right: 31px;
+}
 .view-featured-project-homepage .views-row.row-1 .views-col.col-1 .featured-project-content{
   background: #ffffff;
 }
@@ -522,6 +532,7 @@ section.featured-projects::after {
   background: url(../images/arrow-ios-downward-fill.svg) no-repeat;
 }
 .our-projects {
+  border-bottom: 8px solid #00839B;
   overflow: hidden;
 }
 .view-our-projects .views-row{
@@ -537,9 +548,8 @@ section.featured-projects::after {
   width:100%;
 }
 .view-our-projects .content-section {
-  border-bottom: 8px solid #00839B;
-  min-height: 348px;
-  padding: 20px 30px 30px;
+  min-height: 349px;
+  padding: 20px 30px 28px;
   background: #ffffff;
 }
 .view-our-projects .content-section h4.our-projects-title a {
@@ -1234,7 +1244,7 @@ div#quicktabs-open_opportunities {
   padding: 0px;
 }
 .impact-stories-listing .impact-story-content {
-  padding: 40px 40px 40px 65px;
+  padding: 30px 40px 40px 65px;
   background: #ffffff;
   min-height: 467px;
 }
@@ -1252,8 +1262,7 @@ div#quicktabs-open_opportunities {
   overflow: hidden;
   display: block;
   text-decoration: none;
-  margin-top: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
 }
 .impact-stories-listing .impact-story-quote::before {
   content: '';
@@ -1270,7 +1279,7 @@ div#quicktabs-open_opportunities {
 }
 .impact-stories-listing .impact-story-position {
   font-weight: 700;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 /* contact page css */
 .webform-submission-form {
