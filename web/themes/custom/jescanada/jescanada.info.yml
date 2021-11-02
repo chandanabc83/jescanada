@@ -19,6 +19,7 @@ regions:
 
   breadcrumb: "Breadcrumb"
   content: "Content Area"
+  our_project_page_content: "Our project page content"
   content_top: "Content Top"
   content_middle: "Content Middle"
   content_bottom: "Content Bottom"

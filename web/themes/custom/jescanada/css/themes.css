@@ -293,17 +293,6 @@ section.featured-projects h2.block-title{
   text-align: center;
   margin-bottom: 50px;
 }
-.views-view-grid .views-col {
-  float: left;
-  width: 31.5% !important;
-}
-.views-view-grid .views-col.col-2 {
-  margin-left: 30px;
-  margin-right: 30px;
-}
-.views-view-grid .views-row.row-1{
-  margin-bottom: 40px;
-}
 .featured-project-content {
   padding: 17px 30px 30px 30px;
 }
@@ -411,6 +400,14 @@ section.featured-projects::after {
   line-height: 30px;
   margin-bottom: 20px;
 }
+.view-recent-impact-stories .impact-stories-slideshow-quote::before {
+  content: '';
+  width: 35px;
+  height: 27px;
+  margin-bottom: 5px;
+  background: url(../images/block-quote-line.svg) no-repeat center center/cover;
+  display: block;
+}
 .view-recent-impact-stories .impact-stories-slideshow-position {
   font-weight: 700;
   margin-bottom: 25px;
@@ -439,37 +436,38 @@ section.featured-projects::after {
   background: #004F5D;
 }
 /*our-projects*/
-.our-projects {
-  overflow: hidden;
+.corner-main-section {
+  position: relative;
 }
-.view-our-projects .views-row{
-  margin-bottom: 35px;
+.corner-main-section::after {
+  content: "";
+  background: url(../images/our-project.png) no-repeat top right;
+  width: 772px;
+  height: 557px;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
-.view-our-projects .views-row:last-child{
-  margin-bottom: 0px;
+.our-project-page {
+  background: #F2F2F2;
 }
-.view-our-projects .image-section {
-  padding: 0px;
+.our-project-page #maindiv {
+  margin: auto;
+  padding-top: 65px;
+  margin-bottom: 50px;
 }
-.view-our-projects .image-section img{
-  width:100%;
+.our-project-page-content{
+  margin-bottom:35px;
 }
-.view-our-projects .content-section {
-  border-bottom: 8px solid #00839B;
-  min-height: 348px;
-  padding: 30px;
+.corner-main-section .corner-main {
+  padding-top: 25px;
 }
-.view-our-projects .our-projects-date a {
-  font-size: 18px;
-  line-height: 25px;
-  font-weight: 600;
-  margin: 15px 0px;
-  display: block;
-}
-.view-our-projects .our-projects-desc {
-  font-size: 18px;
-  line-height: 25px;
-  margin-bottom: 40px;
+.our-project-page-content h2.block-title {
+  font-size: 48px;
+  line-height: 68px;
+  text-align: left;
+  margin-top: 0px;
+  padding-bottom: 75px;
 }
 .view-filters .views-exposed-form .form-type-textfield, 
 .view-filters .views-exposed-form .form-type-textfield .form-text {
@@ -523,6 +521,123 @@ section.featured-projects::after {
   right: 15px;
   background: url(../images/arrow-ios-downward-fill.svg) no-repeat;
 }
+.our-projects {
+  overflow: hidden;
+}
+.view-our-projects .views-row{
+  margin-bottom: 35px;
+}
+.view-our-projects .views-row:last-child{
+  margin-bottom: 0px;
+}
+.view-our-projects .image-section {
+  padding: 0px;
+}
+.view-our-projects .image-section img{
+  width:100%;
+}
+.view-our-projects .content-section {
+  border-bottom: 8px solid #00839B;
+  min-height: 348px;
+  padding: 20px 30px 30px;
+  background: #ffffff;
+}
+.view-our-projects .content-section h4.our-projects-title a {
+  font-size: 30px;
+  line-height: 36px;
+  text-decoration: none;
+  display: block;
+}
+.view-our-projects .our-projects-date a {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 600;
+  margin: 15px 0px;
+  display: block;
+}
+.view-our-projects .our-projects-desc {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 40px;
+}
+.view-our-projects .pager li > a, 
+.view-our-projects .pager li > span {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  border-radius: 15px;
+  font-size: 25px;
+  line-height: 34px;
+  font-weight: 700;
+  margin-top: 25px;
+}
+.view-our-projects .pager li > a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -28px;
+  margin: auto;
+  background: url(../images/more-down.svg) no-repeat center;
+  width: 26px;
+  height: 13px;
+}
+.page-node-type-projects h1.page-header {
+  display: none;
+}
+.page-node-type-projects h2.page-header{
+  border-bottom: 0px;
+  padding-bottom: 75px;
+}
+.project-detail-page .related-theme {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.project-detail-page .related-sub-theme {
+  margin: 25px 0 50px 0;
+}
+.project-detail-page .related-sub-theme .field--label{
+  font-size: 20px;
+  line-height: 30px;
+}
+.project-detail-page .related-sub-theme .field--item {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  position: relative;
+}
+.project-bg-section.container-fluid {
+  background: #f2f2f2;
+  padding: 30px;
+  margin: 50px 0px;
+}
+.project-bg-section .image {
+  float: left;
+  height: 75px;
+  margin-right: 25px;
+}
+.project-bg-section .col-sm-4 img {
+  max-width: 170px;
+}
+.project-bg-section .col-sm-4 .field--label {
+  margin-bottom: 10px;
+}
+.project-content-image .project-detail-2 {
+  padding: 0px 40px 65px 20%;
+}
+.project-content-image .project-image {
+  padding: 0px;
+}
+.project-content-image .project-image img {
+  float: right;
+}
+.page-node-type-projects #maindiv {
+  padding-top: 0;
+}
+
 /*footer with bgcolor section*/
 .footer-top-with-bgcolor .block {
   display: inline-block;
@@ -708,7 +823,7 @@ ul.menu.menu--footer.nav li a {
   top: -460px;
   right: -550px;
 }
-.page-node-type-standard-page .inner-page-corner-image .w75-percent {
+.w75-percent {
   width: 75%;
   margin-bottom: 25px;
 }
@@ -891,10 +1006,6 @@ section#block-ourhistory .col-sm-7 img {
 .view-project-theme .views-row:nth-child(odd) .image-section img{
   margin-left: auto;
 }
-.view-project-theme .views-row:nth-child(odd) .image-section img,
-.view-project-theme .views-row:nth-child(even) .image-section img{
-  max-width: 875px;
-}
 section#block-relatedthemeheading h2 {
   font-size: 44px;
   line-height: 56px;
@@ -922,6 +1033,11 @@ section#block-relatedthemeheading h2 {
 .view-project-related-themes .views-col {
   background: #ffffff;
   border-bottom:7px solid #00839B;
+  width: 31.5% !important;
+}
+.view-project-related-themes .views-col.col-2 {
+  margin-left: 32px;
+  margin-right: 32px;
 }
 .view-project-related-themes .project-contents {
   padding: 30px;
@@ -959,6 +1075,7 @@ section#block-relatedthemeheading h2 {
   background: url(../images/arrow-image.png) no-repeat center right;
   display: inline-block;
   background-size: 35px;
+  margin-top: 35px;
   margin-bottom: 100px;
 }
 .page-node-40 .description img {
@@ -1107,44 +1224,61 @@ div#quicktabs-open_opportunities {
 .block-title{
   text-align: center;
 }
-
 /*-----------News listing----------*/
-.row.impact-stories-listing {
-    margin: 0px;
-        margin-bottom: 0px;
-    margin-bottom: 10px;
-    border-bottom: 10px solid #6CA93D;
-    background: #fff;
+.view-impact-story-listing  .impact-stories-listing {
+  margin: 0 0 10px 0;
+  border-bottom: 10px solid #6CA93D;
+  overflow: hidden;
 }
-.row.impact-stories-listing .col-sm-6 {
-    padding: 0px;
+.impact-stories-listing .impact-story-image {
+  padding: 0px;
 }
-.row.impact-stories-listing .img {
-    width: 500px;
-    height: 375px;
+.impact-stories-listing .impact-story-content {
+  padding: 40px 40px 40px 65px;
+  background: #ffffff;
+  min-height: 467px;
 }
-.row.impact-stories-listing .img .img-responsive {
-    width: 100%;
-    height: 100%;
-}
-.impact-stories-listing .content {
-    padding: 40px 0px;
-}
-.impact-stories-listing .content .category {
+.impact-stories-listing .impact-story-category a {
   font-size: 18px;
-  font-family: Open Sans;
-  margin-bottom: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
 }
-.impact-stories-listing .content .title {
+.impact-stories-listing .impact-story-title a {
   font-size: 21px;
-  font-family: initial;
-  font-weight: bold;
-  margin-bottom: 40px;
+  line-height: 32px;
+  font-weight: 700;
+  height: 3em;
+  overflow: hidden;
+  display: block;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-bottom: 50px;
 }
-.impact-stories-listing .content .read-more-btn a {
-  background: #FFCB05;
-  padding: 10px 20px;
-  border-radius: 22px;
-  color: #000;
-  font-weight: 500;
+.impact-stories-listing .impact-story-quote::before {
+  content: '';
+  width: 35px;
+  height: 27px;
+  margin-bottom: 5px;
+  background: url(../images/block-quote-line.svg) no-repeat center center/cover;
+  display: block;
+}
+.impact-stories-listing .impact-story-quote {
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+.impact-stories-listing .impact-story-position {
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+/* contact page css */
+.webform-submission-form {
+  width: 75%;
+}
+.inner-page-corner-image .description .field--type-text-with-summary .row .col-sm-6 {
+  margin: 75px 0 40px 0;
+}
+.breadcrumb > li + li:before {
+  content: ">" !important;
 }
